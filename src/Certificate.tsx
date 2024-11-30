@@ -12,12 +12,23 @@ gsap.registerPlugin(useGSAP,ScrollTrigger)
         start: "top bottom",
         toggleActions: "play none none none"
       }});
-
+      const handleResize = () => {
+         if (window.innerWidth > 900) {
       tl.fromTo(".cerAni", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
       tl.fromTo(".right", { x: 100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
       tl.fromTo(".right-box", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
       tl.fromTo(".left", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
       tl.fromTo(".left-box", { x: 100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
+   } else if (window.innerWidth <= 900) {
+      tl.fromTo(".cerAni", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+      tl.fromTo(".right", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+      tl.fromTo(".right-box", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+      tl.fromTo(".left", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+      tl.fromTo(".left-box", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+    }
+};
+
+handleResize();
    })
 
 

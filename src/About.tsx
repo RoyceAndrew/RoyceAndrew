@@ -23,7 +23,7 @@ function About() {
     <fieldset className='parttitle aboAni'>
     <legend><h2 className='border-gap'><span className='titlenumber'>01.</span>About Me</h2></legend>
     <div>
-    <p className='aboAni'>Hi there! My name is Royce Andrew, and I'm a passionate web developer with expertise in creating dynamic and interactive web applications. Over time, I have honed my skills in the following technologies:</p>
+    <p className='aboAni aboutp'>Hi there! My name is Royce Andrew, and I'm a passionate web developer with expertise in creating dynamic and interactive web applications. Over time, I have honed my skills in the following technologies:</p>
     <div className='skillList  aboAni'>
     <ul>
       <li>JavaScript</li>
@@ -36,7 +36,7 @@ function About() {
       <li>HTML & CSS</li>
     </ul>
     </div>
-    <p className='aboAni'>I am passionate about continuous learning and building solutions that have a meaningful impact. Whether working on personal projects or collaborating with others, I strive to write clean, efficient, and maintainable code. Feel free to explore my projects and get in touch if you'd like to collaborate or learn more!</p>
+    <p className='aboAni aboutp'>I am passionate about continuous learning and building solutions that have a meaningful impact. Whether working on personal projects or collaborating with others, I strive to write clean, efficient, and maintainable code. Feel free to explore my projects and get in touch if you'd like to collaborate or learn more!</p>
     </div>
     </fieldset>
   </section>

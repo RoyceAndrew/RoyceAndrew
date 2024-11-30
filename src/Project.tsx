@@ -35,7 +35,7 @@ function Project() {
                   <span  className="titlenumber">02.</span>Project
                </h2>
             </legend>
-            <div  style={{display: "flex", flexDirection: "row", gap: "20px"}}> 
+            <div className="project-lists" > 
             <ProjectItem 
              imgSrc=".\eeb-scr.png"
              projectTitle="embarrassing-experience-blog"

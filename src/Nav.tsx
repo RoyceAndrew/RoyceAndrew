@@ -6,6 +6,7 @@ import NavTarget from "./NavTarget";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+
 function Nav() {
     const [fixed, setFixed] = useState(false);
     const [visible, setVisible] = useState(true);
@@ -49,6 +50,50 @@ function Nav() {
         window.location.reload();
       };
 
+   const [vis, setVis] = useState(true)
+   const [mobile, setMobile] = useState(false)
+   const [icon, setIcon] = useState("bi-list")
+  
+   useEffect(() => {
+    const handleResize = () => {
+        if (window.innerWidth > 900) {
+            setVis(true);
+            setMobile(false);
+            setIcon("bi-list");
+            document.body.style.overflow = ""
+        } else if (window.innerWidth <= 900) {
+          setVis(false);
+          setMobile(false);
+          
+        }
+    };
+    
+    handleResize();
+    // Tambahkan event listener
+    window.addEventListener("resize", handleResize);
+
+    // Bersihkan event listener ketika komponen di-unmount
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+}, []); // Dependency array kosong karena tidak ada state yang dipantau di sini
+    
+    function handleClick() {
+    if (window.innerWidth <= 900)  {
+    if (vis) {
+     setVis(false)
+     setMobile(false)
+     setIcon("bi-list")
+     document.body.style.overflow = ""
+    } else {
+        setVis(true)
+        setMobile(true)
+        setIcon("bi-x-lg")
+        document.body.style.overflow = "hidden"
+    }} else {}
+  } 
+   
+
     return <nav style={{
         position: fixed ? "fixed" : "absolute",
         top: 0,
@@ -62,12 +107,15 @@ function Nav() {
         boxShadow: fixed ? "0px 2px 10px rgba(0, 0, 0, 0.2)" : "none",
     }} id="nav">
     <a href="#" className="logo" onClick={handleReload}><img className="logoAni" src=".\image-removebg-preview.png"></img></a>
-    <div className="nav-list">
-    <NavTarget navLink="#about" navName="About" navNumber="01."/>
-    <NavTarget navLink="#project" navName="Project" navNumber="02."/>
-    <NavTarget navLink="#certificate" navName="Certificate" navNumber="03."/>
-    <NavTarget navLink="#contact" navName="Contact" navNumber="04."/>
-    </div>
+    <i className={"bi binav " + icon } onClick={handleClick}></i>
+   <div onClick={handleClick} style={{height: mobile ? "100vh" : "auto", width: mobile ? "100vw" : "auto", position: "fixed", visibility: mobile ? "visible" : "collapse", backgroundColor: "rgba(0, 0, 0, 0.1)", top: "0", left: "0", backdropFilter: "blur(5px)"}}></div>
+   <div className="nav-list" style={{marginTop: vis ? "0" : "-100%"}}>
+   
+   <NavTarget onclick={handleClick} navLink="#about" navName="About" navNumber="01."/>
+   <NavTarget onclick={handleClick} navLink="#project" navName="Project" navNumber="02."/>
+   <NavTarget onclick={handleClick} navLink="#certificate" navName="Certificate" navNumber="03."/>
+   <NavTarget onclick={handleClick} navLink="#contact" navName="Contact" navNumber="04."/>
+   </div>
    </nav>
 }
 
