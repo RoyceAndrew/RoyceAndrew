@@ -69,14 +69,12 @@ function Nav() {
     };
     
     handleResize();
-    // Tambahkan event listener
     window.addEventListener("resize", handleResize);
 
-    // Bersihkan event listener ketika komponen di-unmount
     return () => {
         window.removeEventListener("resize", handleResize);
     };
-}, []); // Dependency array kosong karena tidak ada state yang dipantau di sini
+}, []); 
     
     function handleClick() {
     if (window.innerWidth <= 900)  {

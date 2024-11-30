@@ -12,7 +12,7 @@ function Home() {
 
     return <section id="home">
           <div>
-            <p className="homeAni">Hello, i am</p>
+            <p className="homeAni hello">Hello, i am</p>
             <h1 className="homeAni title">Royce Andrew.</h1>
             <h1 className='homeAni sub-title'>A Web Developer.</h1>
           </div>
