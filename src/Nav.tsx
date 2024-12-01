@@ -16,6 +16,7 @@ function Nav() {
       const tl = gsap.timeline();
 
       tl.fromTo(".navAni", {y:-20, opacity:0},{duration: 0.5,delay: 3  ,opacity:1, y:0, stagger: 0.3})
+      tl.fromTo(".binav", {y:-20, opacity:0},{duration: 1.4 ,opacity:1, y:0}, "<0")
       tl.fromTo(".logoAni", {scale: 0},{scale: 1,rotation: 360,duration: 1.4, stagger: 0.2 }, "<0")
       
     },[])
