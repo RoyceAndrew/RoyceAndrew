@@ -674,6 +674,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    
   }
 
   .face {
@@ -692,8 +693,8 @@
     height: auto;
   }
 
-  #about fieldset {
-    width: 350px;
+  .aboutfield {
+    width: 350px !important;
   }
 
   #certificate {
