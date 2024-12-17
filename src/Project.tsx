@@ -51,11 +51,12 @@ function Project() {
              reposLink="https://github.com/RoyceAndrew/MyMangaList"
             />
             <ProjectItem 
-             imgSrc=".\cc-scr.png"
-             projectTitle="currency-converter"
-             ytLink="https://www.youtube.com/embed/UmoW2MrSKkQ"
-             projectDesc="Currency Converter is a website designed to help users convert currencies from one to another in real-time. It utilizes the Frankfurter API to fetch up-to-date exchange rate data, ensuring accuracy and reliability for all conversions. In this project, I also improved my skills in using Axios to work effectively with external APIs, enhancing my ability to integrate third-party services into web applications."
-             reposLink="https://github.com/RoyceAndrew/CurrencyConverter"
+             imgSrc=".\donezopct.png"
+             projectTitle="Donezo"
+             ytLink="https://www.youtube.com/embed/tk7eVoccRdk"
+             projectDesc="Donezo App is a web-based to-do list application built with the MERN stack (MongoDB, Express, React, Node.js) and TypeScript on the frontend, offering a simple and efficient task management experience. It uses JWT for secure user authentication, with bcrypt for password hashing and validator to ensure strong email and password validation. Context API and useReducer are used for seamless state management, while Axios facilitates smooth communication between the frontend and backend. The design is responsive and modern, created with Tailwind CSS."
+             reposLink="https://github.com/RoyceAndrew/Donezo"
+             demoLink="https://donezo-xpef.vercel.app"
             />
            </div>
          </fieldset>

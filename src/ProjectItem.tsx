@@ -8,9 +8,10 @@ type ProjectProps = {
     ytLink: string,
     projectDesc: string,
     reposLink: string,
+    demoLink?: string
 }
 
-function ProjectItem({imgSrc, projectTitle, ytLink, projectDesc, reposLink}:ProjectProps) {
+function ProjectItem({imgSrc, projectTitle, ytLink, projectDesc, reposLink, demoLink}:ProjectProps) {
    const [show, setShow] = useState(false);
    const [tColor, setTColor] = useState("white");
 
@@ -52,7 +53,7 @@ function ProjectItem({imgSrc, projectTitle, ytLink, projectDesc, reposLink}:Proj
    <i className="bi bi-x-circle-fill" onClick={handleDetail}></i>
       <iframe className="project-video" src={ytLink} frameBorder="0" allowFullScreen/>
       <div className="video-detail"><p>{projectDesc}</p>
-      <div><a target="_blank" href={reposLink}><i className="repos bi bi-github"/></a></div>
+      <div className="git-demo"><a target="_blank" href={reposLink}><i className="repos bi bi-github"/></a>{demoLink && <a className="demo" href={demoLink} target="_blank">DEMO</a>}</div>
          </div>
    </div>
 </div>

@@ -112,7 +112,36 @@
   margin-bottom: 10px;
 }
 
-.skillList ul:nth-child(1) {
+.face {
+  height: 350px;
+  margin-left: 20px;
+  border-radius: 10px;
+ 
+}
+
+.fc {
+  transition: 0.3s ease-out;
+}
+
+
+.face-cover {
+  background-color: #00ADB550;
+  width: 263px;
+  margin-top: -354px;
+  z-index: 5;
+  transition: 0.3s ease-out;
+  position: relative;
+}
+
+.face-cover:hover {
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+}
+
+.skillList ul {
   padding-right: 30px;
 }
 
@@ -447,8 +476,27 @@
   
 }
 
+.demo {
+  color: var(--Highlight);
+  text-decoration: none;
+  padding: 8px;
+  border: 1px solid var(--Highlight);
+  border-radius: 5px;
+  margin-top: 12px;
+  transition: 0.3s ease-out;
+}
 
+.demo:hover {
+  color: white;
+  background-color: var(--Highlight);
+}
 
+.git-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 
 
 
@@ -620,6 +668,28 @@
   #home {
     height: 600px;
     padding-top: 100px;
+  }
+
+  .row {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .face {
+    height: 450px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .face-cover {
+    margin-top: -454px;
+    width: 337px;
+    background-color: transparent;
+  }
+
+  #about {
+    height: auto;
   }
 
   #about fieldset {
