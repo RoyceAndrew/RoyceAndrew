@@ -8,4 +8,4 @@ Welcome to my corner of the internet, where I turn coffee ☕ into code 💻 and
 ## 💪 My Skill:
 - Programming language : Javascript, TypeScript
 - Database             : MongoDB, PostgreSQL
-- Framework            : Tailwind, Bootstrap, React
+- Library            : Tailwind, Bootstrap, React
