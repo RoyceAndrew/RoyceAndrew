@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
     return <section id="contact" className="closing-gap">
         <div className="contact-desc">
      <p className="conAni">04. What's Ahead?</p>
-     <h2 className="conAni">Let's Connect</h2>
+     <h2 className="conAni connect">Let's Connect</h2>
      <p className="conAni">I’m actively seeking new opportunities and would love to hear from you! Whether you have a project in mind, a question, or just want to have a chat, don’t hesitate to reach out. I’m eager to connect and explore new possibilities together!</p>
      </div>
      <a className="email conAni" href="mailto:royceandrew142@gmail.com">Email Me</a>

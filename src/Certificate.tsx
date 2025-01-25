@@ -46,7 +46,7 @@ handleResize();
        <CertImg 
        certiLink="https://www.udemy.com/certificate/UC-9e44b1de-60bc-4c2e-ac36-6968e74dcbb0/" 
        imgLink=".\UC-9e44b1de-60bc-4c2e-ac36-6968e74dcbb0.jpg"
-       desc="I have completed a comprehensive course that equipped me with full-stack web development skills. I learned to structure web content with HTML, style it using CSS, and add interactivity through JavaScript. Additionally, I gained experience in building dynamic front-end applications using React, creating server-side functionality with Node.js, and managing databases efficiently using PostgreSQL."
+       desc="I completed a full-stack web development course, mastering HTML, CSS, and JavaScript for building interactive web content. I also gained experience with React for front-end development, Node.js for server-side functionality, and PostgreSQL for database management."
        courseLink="https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=BFCPSALE24"
        courseName="Angela Yu - Web Dev (Udemy)"
        leftSide={true}
