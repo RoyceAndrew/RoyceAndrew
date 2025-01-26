@@ -57,12 +57,12 @@ function Nav() {
   
    useEffect(() => {
     const handleResize = () => {
-        if (window.innerWidth > 900) {
+        if (window.innerWidth > 960) {
             setVis(true);
             setMobile(false);
             setIcon("bi-list");
             document.body.style.overflow = ""
-        } else if (window.innerWidth <= 900) {
+        } else if (window.innerWidth <= 960) {
           setVis(false);
           setMobile(false);
           
@@ -78,7 +78,7 @@ function Nav() {
 }, []); 
     
     function handleClick() {
-    if (window.innerWidth <= 900)  {
+    if (window.innerWidth <= 960)  {
     if (vis) {
      setVis(false)
      setMobile(false)
