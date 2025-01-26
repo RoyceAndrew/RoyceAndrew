@@ -569,10 +569,10 @@
    .certi-desc {
     width: 90vw;
     max-width: 700px;
-     height: 200px;
+     height: 300px;
     
     margin: 0px !important;
-    margin-top: -200px !important;
+    margin-top: -300px !important;
     font-weight: 500;
     display: flex;
     align-items: start;
@@ -583,7 +583,7 @@
       text-align: end !important;
       color: #EEEEEE99;
       margin-top: -40px !important;
-      font-size: 24px !important;
+      font-size: 20px !important;
    }
    .certi-desc p {
     color: #EEEEEE;
@@ -649,7 +649,7 @@
     width: 90vw;
     max-width: 700px;
      height: auto;
-     min-height: 400px;
+     min-height: 300px;
    }
 
    .img-wrapper {
