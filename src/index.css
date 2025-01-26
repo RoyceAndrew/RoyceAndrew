@@ -658,12 +658,14 @@
    }
 
    .detail {
-     width: 300px;
+     width: 90vw;
      padding-bottom: 20px;
+     max-width: 500px;
+     margin: 10% 0px;
    }
 
    .video-detail {
-    width: 300px;
+    width: 120%;
    }
 
    .video-detail p {
@@ -671,14 +673,14 @@
    }
    
    .project-video {
-    height: 150px;
-    width: 300px;
+    height: auto;
+    width: 120%;
     
    }
 
    .bi-x-circle-fill {
     margin-top: -45px;
-    margin-left: 310px;
+    margin-left: 115%;
     cursor: pointer;
   }
 
@@ -733,5 +735,11 @@
 
   #contact {
     height: 500px;
+  }
+
+  .background-detail {
+    overflow-y: auto;
+    align-items: start;
+    
   }
 }
