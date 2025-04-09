@@ -37,18 +37,20 @@ function Project() {
             </legend>
             <div className="project-lists" > 
             <ProjectItem 
-             imgSrc=".\eeb-scr.png"
-             projectTitle="embarrassing-experience-blog"
-             ytLink="https://www.youtube.com/embed/UBgOFaKD5aM"
-             projectDesc="Embarrassing Experience Blog is an interactive blogging platform where users can share their embarrassing experiences. Built using Express for a robust server-side framework, EJS as the template engine for rendering dynamic pages, Node.js to efficiently handle server-side operations, and Axios to create a custom API, this project demonstrates seamless integration of backend technologies to manage and display user-generated content."
-             reposLink="https://github.com/RoyceAndrew/embarrassing-experience-blog"
+             imgSrc=".\Bleet.png"
+             projectTitle="Bleet"
+             ytLink="https://www.youtube.com/embed/A8rkHVjwBeg"
+             projectDesc="Bleet is a full-stack Twitter clone built using React for the frontend and Express.js for the backend. It uses Zustand for lightweight state management, and JWT with bcrypt for secure authentication. The backend integrates Supabase for real-time storage and image handling, while Prisma ORM is used to interact with a PostgreSQL database."
+             reposLink="https://github.com/RoyceAndrew/bleet-frontend"
+             demoLink="https://bleet-frontend-4bk4.vercel.app"
             />
             <ProjectItem 
-             imgSrc=".\mml-scr.png"
-             projectTitle="MyMangaList"
-             ytLink="https://www.youtube.com/embed/tbVMda6BoGc"
-             projectDesc="MyMangaList is a web application built to help users manage and track their manga collections. It leverages the MyAnimeList API to fetch detailed information about various manga, including titles, descriptions, and cover images. The application also uses PostgreSQL as the database to store user data, such as their manga lists, ratings, and preferences. By combining real-time data from MyAnimeList and the power of a PostgreSQL database, MyMangaList provides users with a seamless experience to organize, update, and explore their manga collection."
-             reposLink="https://github.com/RoyceAndrew/MyMangaList"
+             imgSrc=".\chillflix.png"
+             projectTitle="ChillFlix"
+             ytLink="https://www.youtube.com/embed/s04WXA7ODd0"
+             projectDesc="ChillFlix is a Netflix-inspired movie streaming interface built with React and Redux for seamless state management. It integrates with The Movie Database (TMDb) API to dynamically fetch and display trending movies, TV shows, and genre-based content in real-time."
+             reposLink="https://github.com/RoyceAndrew/Chill-react"
+             demoLink="https://chill-react-two.vercel.app"
             />
             <ProjectItem 
              imgSrc=".\donezopct.png"
