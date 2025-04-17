@@ -262,7 +262,7 @@
 }
 
 #certificate {
-  height: 60em;
+  height: 90em;
   width: 100%;
   background-color: var(--Secondary);
   display: flex;

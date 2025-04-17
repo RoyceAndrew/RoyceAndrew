@@ -4,14 +4,18 @@ type Certif = {
    desc: string,
    courseLink: string,
    courseName: string,
-   leftSide: boolean
+   leftSide: boolean,
+   third?: boolean
 };
 
-function CertImg({certiLink, imgLink, desc, courseLink, courseName, leftSide}: Certif) {
+function CertImg({certiLink, imgLink, desc, courseLink, courseName, leftSide, third}: Certif) {
    let leftAni:string = ""
    let boxLeft:string = ""
-   
-   if (!leftSide) {
+   if (third) {
+      leftAni = "third"
+      boxLeft = "third-box"
+   }
+   else if (!leftSide) {
       leftAni = "right"
       boxLeft = "right-box"
    } else {

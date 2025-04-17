@@ -32,7 +32,7 @@ function About() {
     <legend><h2 className='border-gap'><span className='titlenumber'>01.</span>About Me</h2></legend>
     
     <div className="aboutfield">
-    <p className='aboAni aboutp'>Hi there! My name is Royce Andrew, and I'm a passionate web developer with expertise in creating dynamic and interactive web applications. Over time, I have honed my skills in the following technologies:</p>
+    <p className='aboAni aboutp'>Hi there! My name is Royce Andrew, and I'm a passionate web developer with expertise in creating dynamic and interactive web applications. Over time, Here are a few technologies I’ve been working with recently:</p>
     <div className='skillList  aboAni'>
     <ul>
       <li>JavaScript</li>

@@ -19,12 +19,16 @@ gsap.registerPlugin(useGSAP,ScrollTrigger)
       tl.fromTo(".right-box", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
       tl.fromTo(".left", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
       tl.fromTo(".left-box", { x: 100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
+      tl.fromTo(".third", { x: 100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
+      tl.fromTo(".third-box", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
    } else if (window.innerWidth <= 960) {
       tl.fromTo(".cerAni", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
       tl.fromTo(".right", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
       tl.fromTo(".right-box", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
       tl.fromTo(".left", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
       tl.fromTo(".left-box", { y: 100, opacity: 0 },{ y: 0, duration: 1, opacity: 1})
+      tl.fromTo(".third", { x: 100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
+      tl.fromTo(".third-box", { x: -100, opacity: 0 },{ x: 0, duration: 1, opacity: 1})
     }
 };
 
@@ -51,7 +55,18 @@ handleResize();
        courseName="Angela Yu - Web Dev (Udemy)"
        leftSide={true}
     />
-      
+    <CertImg
+      certiLink="https://app.luminpdf.com/viewer/6800756dcda2ff7a8fe21aeb"
+      imgLink=".\certiharisenin.png"
+      desc="Completed a fullstack web development bootcamp at Harisenin.com.
+Learned to build responsive web apps using HTML, CSS, JavaScript, React, and Redux.
+Gained backend experience with Node.js, Express, PostgreSQL, and JWT authentication.
+Also practiced version control (Git), API integration, and app deployment using Vercel and Railway."
+      courseLink="harisenin.com"
+      courseName="Harisenin.com"
+      leftSide={false}
+      third={true}
+      />
     </fieldset>
    </section>
 }
