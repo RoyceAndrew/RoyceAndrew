@@ -26,7 +26,7 @@ gsap.registerPlugin(ScrollTrigger);
      <a className="email conAni" href="mailto:royceandrew142@gmail.com">Email Me</a>
      <p className="or conAni">or</p>
      <div className="iconlist conAni">
-     <ContactIcon iconlink="https://www.linkedin.com/in/royce-andrew-a95149318/" iconName="bi bi-linkedin"/>
+     <ContactIcon iconlink="https://www.linkedin.com/in/royceandrewwijaya" iconName="bi bi-linkedin"/>
      <ContactIcon iconlink="https://github.com/RoyceAndrew" iconName="bi bi-github"/>
      </div>
      <p className="copyright">Designed & Created by Royce Andrew</p>
