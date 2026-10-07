@@ -37,7 +37,7 @@ export default function Navbar() {
           background: "white",
         }}
       ></span>
-      <div className="flex justify-between py-4 px-5 text-sm md:text-base">
+      <div className="flex justify-between py-3 px-5 text-xs md:text-sm">
         <Button
           title="Royce Andrew"
           href="#"

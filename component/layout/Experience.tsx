@@ -3,7 +3,7 @@ import { experiences } from "@/data/experience";
 export default function Experience() {
     return (
         <section id="experience" className="relative px-5 py-24">
-            <p className="text-4xl md:text-5xl font-extrabold mb-12">Experience</p>
+            <p className="text-3xl md:text-5xl font-extrabold mb-12">Experience</p>
             <ul className="border-b border-white/20">
                 {experiences.map((exp) => (
                     <li

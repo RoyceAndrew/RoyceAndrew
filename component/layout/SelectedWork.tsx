@@ -17,7 +17,7 @@ export default function SelectedWork() {
             style={{ "--h": `${n * 100}dvh` } as CSSProperties}
         >
             <section className="py-24 md:py-0 md:pt-24 md:sticky md:top-0 md:h-dvh md:flex md:flex-col md:overflow-hidden">
-                <p className="text-4xl md:text-5xl font-extrabold px-5 mb-12 md:mb-0">Selected Work</p>
+                <p className="text-3xl md:text-5xl font-extrabold px-5 mb-12 md:mb-0">Selected Work</p>
                 <div
                     className="flex flex-col md:flex-row md:flex-1 md:min-h-0 md:mt-6 md:translate-x-(--tx) px-5 md:px-0 border-b border-white/20 md:border-b-0"
                     style={{ "--tx": `calc(var(--progress, 0) * -${Math.max(0, (n * CARD_WIDTH + 5) - 100)}%)` } as CSSProperties}

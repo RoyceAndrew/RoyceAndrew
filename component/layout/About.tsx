@@ -8,7 +8,7 @@ export default function About() {
     return (
         <>
             <section id="about" className="px-5 py-24">
-                <p className="text-4xl md:text-5xl font-extrabold mb-12">About</p>
+                <p className="text-3xl md:text-5xl font-extrabold mb-12">About</p>
                 <p data-scroll className={`${reveal} max-w-5xl text-3xl md:text-5xl font-light leading-tight`}>
                     {statement.map((s, i) => (
                         <span key={i} className={s.muted ? "text-white/40" : ""}>{s.text}</span>
@@ -25,7 +25,7 @@ export default function About() {
             </section>
 
             <section id="toolkit" className="py-24">
-                <p className="text-4xl md:text-5xl font-extrabold mb-12 px-5">Toolkit</p>
+                <p className="text-3xl md:text-5xl font-extrabold mb-12 px-5">Toolkit</p>
                 <div className="overflow-hidden border-y border-white/20 py-6">
                     <div className="flex w-max animate-marquee motion-reduce:animate-none">
                         {[...tools, ...tools].map((t, i) => (
