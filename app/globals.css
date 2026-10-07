@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-scroll-line: scroll-line 2s ease-in-out infinite;
+  @keyframes scroll-line {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    50% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    51% {
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+@media (min-width: 768px) and (pointer: fine) {
+  html {
+    font-size: calc(100vw / 1440 * 16);
+  }
+}
