@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { selectedWorks } from "@/data/selectedWork";
 
 const CARD_WIDTH = 85;
@@ -5,24 +6,31 @@ const CARD_WIDTH = 85;
 export default function SelectedWork() {
     const n = selectedWorks.length;
 
+    // Horizontal pinned scroll only from md up; mobile stacks the cards vertically.
     return (
         <div
             id="selected-work"
             data-scroll
             data-scroll-css-progress
             data-scroll-offset="100%,100%"
-            style={{ height: `${n * 100}dvh` }}
+            className="md:h-(--h)"
+            style={{ "--h": `${n * 100}dvh` } as CSSProperties}
         >
-            <section className="sticky top-0 h-dvh flex flex-col overflow-hidden pt-20 md:pt-24">
-                <p className="text-4xl md:text-5xl font-extrabold px-5">Selected Work</p>
+            <section className="py-24 md:py-0 md:pt-24 md:sticky md:top-0 md:h-dvh md:flex md:flex-col md:overflow-hidden">
+                <p className="text-4xl md:text-5xl font-extrabold px-5 mb-12 md:mb-0">Selected Work</p>
                 <div
-                    className="flex flex-1 mt-6"
-                    style={{ transform: `translateX(calc(var(--progress, 0) * -${Math.max(0, (n * CARD_WIDTH + 5) - 100)}%))` }}
+                    className="flex flex-col md:flex-row md:flex-1 md:min-h-0 md:mt-6 md:translate-x-(--tx) px-5 md:px-0 border-b border-white/20 md:border-b-0"
+                    style={{ "--tx": `calc(var(--progress, 0) * -${Math.max(0, (n * CARD_WIDTH + 5) - 100)}%)` } as CSSProperties}
                 >
                     {selectedWorks.map((work, i) => (
-                        <div key={work.id} className="shrink-0 pl-5 pb-5" style={{ width: `${CARD_WIDTH}%` }}>
-                            <div className="h-full border border-white/20 flex flex-col justify-between gap-4 md:gap-6 p-5 md:p-12">
-                                <div className="flex justify-between text-sm font-light text-white/60">
+                        <div
+                            key={work.id}
+                            data-scroll
+                            className="md:shrink-0 md:w-(--w) md:pl-5 md:pb-5 transition duration-700 max-md:opacity-0 max-md:translate-y-8 max-md:[&.is-inview]:opacity-100 max-md:[&.is-inview]:translate-y-0"
+                            style={{ "--w": `${CARD_WIDTH}%` } as CSSProperties}
+                        >
+                            <div className="md:h-full border-t md:border border-white/20 flex flex-col md:justify-between gap-6 py-10 px-2 md:p-12">
+                                <div className="flex flex-wrap justify-between gap-x-4 text-sm font-light text-white/60">
                                     <span>{String(i + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}</span>
                                     <span>{work.type} · {work.role} · {work.year}</span>
                                 </div>
